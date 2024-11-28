@@ -1,4 +1,8 @@
 {
   "version": "02.11.2024",
   "updateurl": "https://raw.githubusercontent.com/User653478/script/refs/heads/main/Palenation%20Extra%20Bots.luac"
+  "whitelist":
+  [
+    "Tima_Mafizik"
+  ]
 }
