@@ -13,7 +13,7 @@ function asyncHttpRequests(method, url, args, resolve, reject)
  
     if not resolve then resolve = function() end end
     if not reject then reject = function() end end
-    --lua_thread.create(function()
+    lua_thread.create(function()
        local runner = request_thread
        while true do
           local status, err = runner:status()
@@ -34,5 +34,5 @@ function asyncHttpRequests(method, url, args, resolve, reject)
           end
           wait(0)
        end
-    --end)
+    end)
  end
